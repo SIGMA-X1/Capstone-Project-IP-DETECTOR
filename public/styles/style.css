@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    background-color: #d9d9d9;
+    padding-bottom: 2px;
+    justify-content: space-between;
+    
+}
+.right{
+    margin-right: 33px;
+    padding-top: 35px;
+}
+.nav .left .logoimg{
+    height: 102px;;
+    width: 142px;
+}
+ul{
+ display: flex;
+}
+ul li{
+    color: white;
+    list-style: none;
+    color: white;
+    list-style: none;
+    margin-right: 45px;
+    font-size: 19px;
+    font-weight: 900;
+}
+li a{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+li a:hover{
+    color: darkgoldenrod;
+    transition: 0.1s ease-in;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+#insearch{
+    font-size: 17px;
+    margin-right: 4px;
+    
+}
+.ipsearch{
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 5px;
+    color:#d9d9d9;
+}
+.searchbtn{
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #49c949;
+    padding: 2px 9px;
+}
+.maincontent{
+    height: 400px;
+    width:99vw;
+    padding: 3px;
+    display:flex;
+    margin-top: 21px;
+}
+.maincontent .image{
+    width:50%
+
+} 
+.maincontent .image img{
+    height: 367px;
+    width: 370px;
+    border: 1px solid black;
+    border-radius: 243px;
+}
+div h3{
+    margin-top: 11px;
+    font-size: 21px;
+    color: #49c949;
+}
+.Locationbtn{
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #49c949;
+    padding: 2px 9px;
+}
+.loc{
+    display: flex;
+    justify-content: flex-end;
+    width: 454px;
+}
+.ipcontent{
+    margin-top: 28px;
+}
+body{
+    background-color: black;
+}
+.footer
+{
+    height: 87px;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+
+}
+.footer p{
+    color:  #d9d9d9;
+    padding: 47px;
+}
+.about{
+    height: 437px;
+    padding-top: 41px;
+    width: 87vw;
+    margin: auto;
+}
+.about h2{
+    color: #66BB6A;
+    font-size: 34px;
+    margin-bottom: 19px;
+}
+.about p{
+
+        color: #66BB6A;
+        font-size: 22px;
+}

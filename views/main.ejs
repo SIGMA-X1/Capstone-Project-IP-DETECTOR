@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <%-include("partials/header.ejs")%>
+  <section class="content">
+   <div class="searchbar">
+    <form action="/search" method="post">
+      <label class="ipsearch" for="ip">Enter the ip Address:</label>
+      <input type="text" name="ipaddress" id="insearch">
+       <button class="searchbtn" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="maincontent">
+    <div class="image">
+      <img src="images/blackglob.webp" alt="">
+    </div>
+    <div class="ipcontent">
+    <% if(locals.result){%>
+  <div>
+   <h3>ip:   <%= result.ip %></h3>
+   <h3>city:   <%= result.city %></h3>  
+   <h3>region:   <%= result.region %> </h3>
+   <h3>country:   <%= result.country %></h3>
+    <h3>loc:   <%= result.loc %></h3>
+    <h3>org:   <%= result.org %> </h3>
+     <h3>postal:   <%= result.postal %></h3>
+     <h3>timezone:   <%= result.timezone %></h3>
+     <div class="loc">
+     <form action="/location" method="get">
+      <button class="Locationbtn" type="submit">Location</button>
+    </form>
+    </div>
+     </div>
+  
+
+   <% } else{%>
+    <div>no content</div>
+
+    <%}%>
+    </div>
+    </div>
+
+  </section>
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

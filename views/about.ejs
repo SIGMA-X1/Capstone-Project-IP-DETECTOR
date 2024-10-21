@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        The IP Detector Project is a robust and user-friendly web application that retrieves detailed geolocation information associated with an IP address, using IPinfo's geolocation services. It serves as a practical tool for users to understand not only their own IP-related details but also how IP addresses map to geographic locations. Key details such as the IP address, city, region, country, geographic coordinates (latitude and longitude), organization, postal code, and timezone are displayed to provide comprehensive insight into the IP’s origin and context.
+        One of the standout features of the project is the seamless integration with Google Maps, allowing users to visualize their location using the geographic coordinates. A clickable button directs users to Google Maps, where their latitude and longitude are plotted, offering real-time interaction with the IP data. This functionality is particularly valuable for users who want to quickly verify their physical location or use the feature for more advanced location-based services.</p>
+
+    </section>
+    
+    <%-include("partials/footer.ejs")%>
+</body>
+</html>
